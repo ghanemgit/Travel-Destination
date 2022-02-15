@@ -37,14 +37,15 @@
 
 
 .SMins {
-    background: #ff0077;
+    background: #bd0061;
     color: white;
 }
 .textCU{
     text-align: center;
+    color: #ff0077;
 }
 .linkStyle{
-    color: aqua;
+    color: #ff0077;
 }
 .smItem{
     background-color: #000000;

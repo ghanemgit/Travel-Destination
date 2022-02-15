@@ -5,7 +5,7 @@ import Data from '../../data/db.json';
 import SeeMore from './seeMore';
 import { useState } from "react";
 
-function ShowCityDetails() {
+function TourDetails() {
     const { id } = useParams();
 
     const [see_more, set_see_more] = useState(false);
@@ -13,54 +13,36 @@ function ShowCityDetails() {
     const handleSeeMore = () => {
         set_see_more(!see_more);
     }
-    if (see_more) {
-        return (
-            <>
-                <div className='container'>
-                    {Data.filter((list) => list.id === id).map((element) => (
 
-                        <div key={element.id}>
-                            <img src={element.image} alt={element.name} />
-                            <h2>City : {element.name} </h2>
-                            <p className='paragraph'>{element.info}</p>
-                            <h2>Price : {element.price} $</h2>
-                            <SeeMore see_more={see_more} handleSeeMore={handleSeeMore} />
-                            <hr></hr>
-                        </div>
+    return (
+        <>
+            <div className='container'>
+                {Data.filter((list) => list.id === id).map((element) => (
 
+                    <div key={element.id}>
+                        <img src={element.image} alt={element.name} />
+                        <h2>City : {element.name} </h2>
 
-                    ))}
-                </div>
+                        <p className='paragraph'><h3>About city :</h3>  {see_more ? element.info : element.info.substring(0, 250)}</p>
+                        <SeeMore see_more={see_more} handleSeeMore={handleSeeMore} />
+                        <h2>Price : {element.price} $</h2>
+
+                        <hr></hr>
+                    </div>
 
 
-            </>
+                ))}
+            </div>
 
 
-        );
-    } else {
-        return (
-            <>
-                <div className='container'>
-                    {Data.filter((list) => list.id === id).map((element) => (
-
-                        <div key={element.id}>
-                            <img src={element.image} alt={element.name} />
-                            <h2>City : {element.name} </h2>
-                            <SeeMore see_more={see_more} handleSeeMore={handleSeeMore} />
-                            <hr></hr>
-                        </div>
+        </>
 
 
-                    ))}
-                </div>
+    );
 
-
-            </>
-        );
-    }
 }
 
 
 
-export default ShowCityDetails;
+export default TourDetails;
 

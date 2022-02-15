@@ -8,7 +8,7 @@ import Footer from '../footer/Footer';
 
 import { Routes, Route } from 'react-router-dom';
 
-function render() {
+function Home() {
     return (
         <>
             <div className='HomeStyle'>
@@ -29,4 +29,4 @@ function render() {
 }
 
 
-export default render;
+export default Home;

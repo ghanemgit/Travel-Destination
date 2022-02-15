@@ -4,7 +4,7 @@ import Data from '../../data/db.json';
 
 
 
-function CityDataTours() {
+function Tours() {
 
 
 
@@ -18,8 +18,4 @@ function CityDataTours() {
     );
 }
 
-
-
-
-
-export default CityDataTours;
+export default Tours;
