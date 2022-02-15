@@ -1,16 +1,18 @@
-footer{
-    background-color: #FFE652;
-    margin-top: -19px;
+.footer{
+    background-color: #000000;
+    
 }
 .fa {
-    padding: 15px 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
     font-size: 40px;
     width: 100px;
     text-align: center;
     text-decoration: none;
     margin: 150px;
-    margin-left: 8.9%;
-    margin-block-end: auto;
+    
+    
 }
 
 .fa:hover {
@@ -35,9 +37,15 @@ footer{
 
 
 .SMins {
-    background: #c72800;
+    background: #ff0077;
     color: white;
 }
 .textCU{
     text-align: center;
+}
+.linkStyle{
+    color: aqua;
+}
+.smItem{
+    background-color: #000000;
 }

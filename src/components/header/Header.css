@@ -1,7 +1,13 @@
 .Intro {
-    border: 1px solid gray;
+  border: 1px solid gray;
   padding: 50px;
-  
   text-align: justify;
   letter-spacing: 3px;
+}
+.img{
+  max-width: 4%;
+  height: auto;
+  float: right;
+  padding-right: 72%;
+  padding-top: 1.2%;
 }
