@@ -1,25 +1,18 @@
-import './Tours.css'
+import './Tours.css';
+import Tour from './tour/Tour';
+import Data from '../../data/db.json';
 
-function cityData(props) {
+
+
+function CityDataTours() {
+
+
 
     return (
         <>
-            <div className='container'>
-                {props.data.map(element => {
-                    return (
 
-                        <p>
-                            <img src={element.image} alt={element.name} />
-                            <h2>City : {element.name} </h2>
-                            <hr></hr>
-                        </p>
+            <Tour data={Data} />
 
-
-
-                    );
-                })}
-
-            </div>
 
         </>
     );
@@ -29,4 +22,4 @@ function cityData(props) {
 
 
 
-export default cityData;
+export default CityDataTours;
