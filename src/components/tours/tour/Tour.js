@@ -1,9 +1,9 @@
 import './Tour.css';
 import { Link } from 'react-router-dom';
+import Tours from '../Tours';
 
 
-
-function cityDataTour(props) {
+function Tour(props) {
 
     return (
         <>
@@ -11,7 +11,7 @@ function cityDataTour(props) {
             <div className='container'>
                 {props.data.map(element => {
                     return (
-                        <Link to={`/city/${element.id}`} className='linkStyle'>
+                        <Link to={`/city/${element.id}`} className='linkStyleTour'>
                             <div key={element.id}>
                                 <img src={element.image} alt={element.name} />
                                 <h2>City : {element.name} </h2>
@@ -31,6 +31,6 @@ function cityDataTour(props) {
 
 
 
-export default cityDataTour;
+export default Tour;
 
 
